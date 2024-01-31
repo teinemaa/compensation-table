@@ -1,0 +1,88 @@
+body {
+	background-color:#f1f1ed;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+
+div.container {
+	width: 900px;
+	margin: auto;
+	
+}
+
+div.banner {
+	margin:20px;
+	text-align: center;
+}
+
+div.menu {
+	float:right;
+	margin: 20px;
+	margin-top: 40px;
+	padding:10px;
+	background-color:#fff;
+	border:1px dashed #999;
+	width:138px;
+	font-family: Arial Black, Gadget, sans-serif;
+	font-size:12px;
+}
+
+div.content {
+	margin:20px;
+	float: left;
+}
+
+div.contentbox {
+	margin:20px;
+	margin-top:40px;
+	float: left;
+	padding:15px;
+	width: 628px;
+	background-color:#f9f9f9;
+	border:1px dashed #999;
+	line-height:17px;
+}
+
+div.add {
+	float:right;
+	margin: 20px;
+	padding:10px;
+	width:138px;
+	text-align: center;
+}
+
+
+a {
+	color:#09c;
+	text-decoration:none;
+}
+
+a:link {color:#222;}
+a:visited {color:#777;}
+a:hover {text-decoration: underline}
+
+div.contentbox  h1 {
+	margin:0px 0px 15px 0px;
+	padding:0px;
+	font-size:21px;
+	line-height:21px;
+	font-weight:900;
+	color:#888;
+}
+
+div.contentbox  p {
+	margin:0px 0px 16px 0px;
+	padding:0px;
+	font-size: 14px;
+}
+
+div.contentbox ul {
+	font-size: 14px;
+}
+
+div.menu ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
