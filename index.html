@@ -1,1 +1,102 @@
-test
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Bridge Scoring</title>
+
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" /> 
+<meta name="description" content="Duplicate bridge score calculator." /> 
+<meta name="keywords" content="bridge scoring" /> 
+
+<link href="/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="/css/calc.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" type="text/javascript" src="/scripts/compensator.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+
+<div class="content">
+<table>
+	
+<caption>
+	<font id="msg" class="box">Bridge compensation score calculator</font>
+</caption> 
+
+<tbody>
+	
+	<tr>
+		<th>Level</th>
+		<td id="r1c0" onclick="clicked(1, 0)" class="new">1</td>
+		<td id="r1c1" onclick="clicked(1, 1)" class="new">2</td>
+		<td id="r1c2" onclick="clicked(1, 2)" class="new">3</td>
+		<td id="r1c3" onclick="clicked(1, 3)" class="new">4</td>
+		<td id="r1c4" onclick="clicked(1, 4)" class="new">5</td>
+		<td id="r1c5" onclick="clicked(1, 5)" class="new">6</td>
+		<td id="r1c6" onclick="clicked(1, 6)" class="new">7</td>
+	</tr>
+	
+	<tr>
+		<th>Trump</th>
+		<td id="r2c0" onclick="clicked(2, 0)" class="new">&clubs;</td>
+		<td id="r2c1" onclick="clicked(2, 1)" class="new">&diams;</td>
+		<td id="r2c2" onclick="clicked(2, 2)" class="new">&hearts;</td>
+		<td id="r2c3" onclick="clicked(2, 3)" class="new">&spades;</td>
+		<td id="r2c4" colspan="3" onclick="clicked(2, 4)" class="new">No trump</td>
+	</tr>
+	
+	<tr>
+		<th>Risk</th>	
+		<td id="r3c0" colspan="3" onclick="clicked(3, 0)" class="new">No double</td>
+		<td id="r3c1" colspan="2" onclick="clicked(3, 1)" class="new">Double</td>
+		<td id="r3c2" colspan="2" onclick="clicked(3, 2)" class="new">Redouble</td>
+	</tr>
+	
+	<tr>
+		<th rowspan="2">Tricks</th>	
+		<td id="r4c7" onclick="clicked(4, 7)" class="new">7</td>
+		<td id="r4c8" onclick="clicked(4, 8)" class="new">8</td>
+		<td id="r4c9" onclick="clicked(4, 9)" class="new">9</td>
+		<td id="r4c10" onclick="clicked(4, 10)" class="new">10</td>
+		<td id="r4c11" onclick="clicked(4, 11)" class="new">11</td>
+		<td id="r4c12" onclick="clicked(4, 12)" class="new">12</td>
+		<td id="r4c13" onclick="clicked(4, 13)" class="new">13</td>
+	</tr>
+	
+	<tr>
+		<td id="r4c6" onclick="clicked(4, 6)" class="new">6</td>
+		<td id="r4c5" onclick="clicked(4, 5)" class="new">5</td>
+		<td id="r4c4" onclick="clicked(4, 4)" class="new">4</td>
+		<td id="r4c3" onclick="clicked(4, 3)" class="new">3</td>
+		<td id="r4c2" onclick="clicked(4, 2)" class="new">2</td>
+		<td id="r4c1" onclick="clicked(4, 1)" class="new">1</td>
+		<td id="r4c0" onclick="clicked(4, 0)" class="new">0</td>
+	</tr>
+	
+	<tr id="r1">	
+	</tr>
+
+	<tr id="r2">	
+	</tr>	
+	
+	<tr id="r3">	
+	</tr>
+
+	<tr id="r4">
+		<th>Score</th>		
+		<td colspan="6" id="noScore">0</td>		
+		<td id="reset" onclick="reset()" class="unchecked">reset</td>	
+	</tr>
+
+	
+</tbody>
+	
+</table>
+</div>
+
+</div>
+
+</body>
+</html>
